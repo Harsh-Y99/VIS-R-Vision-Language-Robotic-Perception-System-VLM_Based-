@@ -51,7 +51,7 @@ Rule Engine
 
 ```
 
----
+
 
 ## 📁 Project Structure
 
@@ -75,13 +75,13 @@ VIS-R/
 └── README.md
 ```
 
----
+
 ## 📸 Output Sample
 
 <b>Output Sample</b><br>
 
 <p align="center">
-  <img src="assets/VSIR.png" width="700"/>
+  <img src="VSIR.png" width="700"/>
 </p>
 ---
 🔮 Use Cases
