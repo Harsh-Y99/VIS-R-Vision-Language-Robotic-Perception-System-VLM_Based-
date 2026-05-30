@@ -81,7 +81,7 @@ VIS-R/
 <b>Output Sample</b><br>
 
 <p align="center">
-  <img src="VSIR.png" width="700"/>
+  <img src="VISR.png" width="700"/>
 </p>
 ---
 🔮 Use Cases
