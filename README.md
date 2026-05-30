@@ -21,65 +21,68 @@ It is designed as a **modular robotics AI pipeline** for future integration with
 ---
 
 ---
+## 🏗️ System Architecture
 
-## System Architecture
-
+```text
 Camera Input
-│
-▼
+     │
+     ▼
 YOLOv8 Object Detection
-│
-▼
+     │
+     ▼
 Frame + Detections
-│
-▼
+     │
+     ▼
 VLM Client (Gemini / LLaVA / Moondream)
-│
-├── Fast Mode (quick scene summary)
-└── Deep Mode (reasoning + risk analysis)
-│
-▼
+     │
+     ├── Fast Mode
+     └── Deep Mode
+     │
+     ▼
 Parser Layer
-│
-▼
-Rule Engine (robot logic decisions)
-│
-├── Text Output
-├── Voice Output (TTS)
-└── UI Alerts
----
-
+     │
+     ▼
+Rule Engine
+     │
+     ├── Text Output
+     ├── Voice Output
+     └── UI Alerts
+```
 
 ```
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
+```text
 VIS-R/
 │
 ├── src/
-│ ├── camera.py
-│ ├── vision.py
-│ ├── vlm_client.py
-│ ├── parser.py
-│ ├── automation.py
-│ ├── tts.py
-│ ├── stt.py
-│ ├── ui.py
-│ ├── logger.py
+│   ├── camera.py
+│   ├── vision.py
+│   ├── vlm_client.py
+│   ├── parser.py
+│   ├── automation.py
+│   ├── tts.py
+│   ├── stt.py
+│   ├── ui.py
+│   ├── logger.py
 │
 ├── main.py
 ├── config.py
 ├── requirements.txt
 └── README.md
+```
 
 ---
 ## 📸 Output Sample
 
 <b>Output Sample</b><br>
 
-<img src="VSIR.png" width="700"/>
+<p align="center">
+  <img src="assets/VSIR.png" width="700"/>
+</p>
 ---
 🔮 Use Cases
 🤖 Robotics perception systems
