@@ -1,132 +1,115 @@
-# VIS-R: Vision-Language Robotic Perception System
+# 🧠 VIS-R: Vision-Language Robotic Perception System
 
-## Overview
+VIS-R is a real-time **AI-powered robotic perception system** that combines **Computer Vision (YOLOv8)** with **Vision-Language Models (LLaVA / Moondream)** and **speech interfaces** to enable intelligent scene understanding and human–robot interaction.
 
-VIS-R is an intelligent robotic perception system that combines Computer Vision, Vision-Language Models (VLMs), and speech interfaces to enable real-time scene understanding and human-robot interaction.
-
-The system integrates YOLOv8 object detection with multimodal AI models such as LLaVA and Moondream, allowing users to query their environment using natural language and receive contextual responses. The architecture is designed with future ROS 2 and robotics integration in mind.
+It is designed as a **modular robotics AI pipeline** for future integration with **ROS 2, edge devices, and autonomous robots**.
 
 ---
 
-## Features
+## 🚀 Key Features
 
-* Real-time object detection using YOLOv8
-* Vision-Language reasoning with LLaVA and Moondream
-* Natural language scene understanding
-* Speech-to-Text (STT) input pipeline
-* Text-to-Speech (TTS) response generation
-* Multi-model AI backend selection
-* Modular and extensible architecture
-* Robotics-oriented design for future ROS 2 integration
-
----
-
-## Tech Stack
-
-### Languages
-
-* Python
-
-### Computer Vision
-
-* OpenCV
-* YOLOv8
-
-### Vision-Language Models
-
-* LLaVA
-* Moondream
-
-### AI & Automation
-
-* Gemini API
-* Speech Recognition
-* Text-to-Speech
-
-### Frameworks & Tools
-
-* Flask
-* Git
-* Linux
+- 🎯 Real-time object detection using **YOLOv8**
+- 🧠 Vision-Language reasoning (LLaVA / Moondream / Gemini-ready architecture)
+- 🗣️ Speech-to-Text (STT) interactive input
+- 🔊 Text-to-Speech (TTS) responses
+- ⚡ Fast + Deep dual-stage VLM inference pipeline
+- 📊 Rule-based decision engine for robotics actions
+- 🖥️ Live UI dashboard with alerts & detection overlays
+- 📸 Snapshot capture system
+- 🧩 Modular architecture for easy scaling
 
 ---
+
+
 
 ## System Architecture
+Camera Input
+│
+▼
+YOLOv8 Object Detection
+│
+▼
+Frame + Detections
+│
+▼
+VLM Client (Gemini / LLaVA / Moondream)
+│
+├── Fast Mode (quick scene summary)
+└── Deep Mode (reasoning + risk analysis)
+│
+▼
+Parser Layer
+│
+▼
+Rule Engine (robot logic decisions)
+│
+├── Text Output
+├── Voice Output (TTS)
+└── UI Alerts
 
-```text
-Camera/Input
-      │
-      ▼
-   YOLOv8
-      │
-      ▼
- Scene Analysis
-      │
-      ▼
- VLM (LLaVA/Moondream)
-      │
-      ▼
- Natural Language Reasoning
-      │
-      ├── Text Response
-      └── Voice Response (TTS)
+
 ```
 
 ---
 
 ## Project Structure
 
-```text
 VIS-R/
+│
 ├── src/
+│ ├── camera.py
+│ ├── vision.py
+│ ├── vlm_client.py
+│ ├── parser.py
+│ ├── automation.py
+│ ├── tts.py
+│ ├── stt.py
+│ ├── ui.py
+│ ├── logger.py
+│
 ├── main.py
 ├── config.py
 ├── requirements.txt
-├── README.md
-└── assets/
-```
+└── README.md
 
 ---
+## 📸 Output Sample
 
-## Use Cases
+<b>Output Sample</b><br>
 
-* Intelligent robotic perception
-* Human-robot interaction
-* Context-aware AI assistants
-* Smart surveillance systems
-* Assistive robotics
-* Edge AI experimentation
+<img src="assets/VSIR.png" width="700"/>
+🔮 Use Cases
+🤖 Robotics perception systems
 
----
+🏭 Industrial monitoring
 
-## Current Status
+🧑‍🤝‍🧑 Human–robot interaction
 
-🚧 Under Active Development
+🎥 Smart surveillance systems
 
-Current focus:
+🧠 Edge AI assistants
 
-* Dashboard improvements
-* Performance optimization
-* Enhanced VLM reasoning
-* Future ROS 2 integration
+🚗 Autonomous systems research
 
----
+🛣️ Future Roadmap
+ROS 2 integration 🤖
 
-## Future Roadmap
+Multi-camera fusion system 📷
 
-* ROS 2 integration
-* Robot navigation support
-* Multi-camera perception
-* Voice-controlled robotics
-* Edge deployment on Raspberry Pi 5
-* Autonomous task execution
+Edge deployment (Raspberry Pi 5 / Jetson Nano)
 
----
+Voice-controlled robot actions 🗣️
 
-## Author
+Reinforcement learning-based navigation
 
-**Harsh Yadav**
+Real-time object tracking + memory system
 
+👨‍💻 Author
+Harsh Yadav
 AI • Robotics • Computer Vision • Embedded Systems
 
 GitHub: https://github.com/Harsh-Y99
+
+⭐ Status
+🚧 Actively under development
+🧠 Research + Robotics + AI Fusion Project
