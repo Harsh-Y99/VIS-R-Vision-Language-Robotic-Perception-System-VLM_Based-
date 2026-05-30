@@ -20,9 +20,10 @@ It is designed as a **modular robotics AI pipeline** for future integration with
 
 ---
 
-
+---
 
 ## System Architecture
+
 Camera Input
 │
 ▼
@@ -46,6 +47,7 @@ Rule Engine (robot logic decisions)
 ├── Text Output
 ├── Voice Output (TTS)
 └── UI Alerts
+---
 
 
 ```
@@ -77,7 +79,8 @@ VIS-R/
 
 <b>Output Sample</b><br>
 
-<img src="assets/VSIR.png" width="700"/>
+<img src="VSIR.png" width="700"/>
+---
 🔮 Use Cases
 🤖 Robotics perception systems
 
